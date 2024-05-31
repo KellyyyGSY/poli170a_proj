@@ -1,0 +1,27 @@
+---
+title: "poli170a"
+author: "Kelly Gong"
+date: "2024-05-31"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readr)
+merged_df <- read_csv("/Users/kellygong/Downloads/merged_df.csv")
+View(merged_df)
+```
+
+```{r}
+library(stats)
+# Fit the linear model with log-transformed variables
+full_model <- lm(crime_density ~ log(alcohol_density) + afternoon_till_eve, data=merged_df)
+
+# Print the summary of the model
+summary(full_model)
+```
