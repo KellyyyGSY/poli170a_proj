@@ -1,18 +1,32 @@
-﻿city,population,poverty,percent,
-"Carlsbad city, California",114204,7858,6.88%,
-"Chula Vista city, California",274000,24068,8.78%,
-"Coronado city, California",15430,900,5.83%,
-"Del Mar city, California",3943,66,1.67%,
-"El Cajon city, California",103824,19586,18.86%,
-"Encinitas city, California",61540,4355,7.08%,
-"Escondido city, California",149548,19796,13.24%,
-"Imperial Beach city, California",26077,3997,15.33%,
-"La Mesa city, California",60050,7015,11.68%,
-"National City city, California",55123,7761,14.08%,
-"Oceanside city, California",172603,15875,9.20%,
-"Poway city, California",48247,2860,5.93%,
-"San Diego city, California",1343744,152819,11.37%,
-"San Marcos city, California",92911,9045,9.74%,
-"Santee city, California",57816,4879,8.44%,
-"Solana Beach city, California",12946,617,4.77%,
-"Vista city, California",96791,10634,10.99%,
+city,population,poverty
+"Alpine CCD, San Diego County, California","16,812","1,513"
+"Borrego Springs CCD, San Diego County, California","3,730",270
+"Fallbrook CCD, San Diego County, California","51,799","6,401"
+"Jamul CCD, San Diego County, California","16,900","1,086"
+"Pauma Valley CCD, San Diego County, California","6,861",651
+"Ramona CCD, San Diego County, California","36,110","1,719"
+"Valley Center CCD, San Diego County, California","24,147","2,337"
+"Bonsall CDP, California","4,084",439
+"Campo CDP, California","3,267",901
+"Carlsbad city, California","114,204","7,858"
+"Chula Vista city, California","274,000","24,068"
+"Coronado city, California","15,430",900
+"Del Mar city, California","3,943",66
+"Descanso CDP, California","1,425",11
+"El Cajon city, California","103,824","19,586"
+"Encinitas city, California","61,540","4,355"
+"Escondido city, California","149,548","19,796"
+"Imperial Beach city, California","26,077","3,997"
+"Lakeside CDP (San Diego County), California","21,561","1,713"
+"La Mesa city, California","60,050","7,015"
+"Lemon Grove city, California","27,194","2,710"
+"National City city, California","55,123","7,761"
+"Oceanside city, California","172,603","15,875"
+"Poway city, California","48,247","2,860"
+"Rancho Santa Fe CDP, California","3,001",102
+"San Diego city, California","1,343,744","152,819"
+"San Marcos city, California","92,911","9,045"
+"Santee city, California","57,816","4,879"
+"Solana Beach city, California","12,946",617
+"Spring Valley CDP (San Diego County), California","32,327","4,233"
+"Vista city, California","96,791","10,634"
