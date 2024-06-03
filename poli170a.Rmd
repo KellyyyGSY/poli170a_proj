@@ -3,30 +3,44 @@ title: "poli170a"
 author: "Kelly Gong"
 date: "2024-05-31"
 output:
-  pdf_document: default
-  html_document: default
+  pdf_document:
+    keep_tex: true
+header-includes:
+   - \usepackage{dcolumn}    
+classoption: landscape
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r}
 library(readr)
-# merged_df <- read_csv("/Users/kellygong/Downloads/merged_df.csv")
-merged_df <- read_csv("merged_df.csv")
+library(stats)
+library(stargazer)
+library(ggplot2)
+```
+
+```{r}
+merged_df <- read_csv("/Users/kellygong/Downloads/merged_df.csv")
 
 ```
 ```{r}
-library(stats)
 # Fit the linear model with log-transformed variables
 full_model <- lm(crime_density ~ alcohol_density + density, data=merged_df)
 
 # Print the summary of the model
 summary(full_model)
 ```
+
+```{r, results='asis'}
+stargazer(full_model,
+          type = "latex",
+          title = "Results",
+          align = TRUE,
+          covariate.labels = c("Alcohol Density", "Population Density"),
+          dep.var.labels = "Crime Density",
+          dep.var.caption = "Dependent Variable")
+```
+
 ```{r}
-library(ggplot2)
 p <- ggplot(merged_df, aes(x = alcohol_density, y = crime_density, color = density)) +
   geom_point() +
   geom_smooth(method = "lm", se = TRUE, color = "red") + 
